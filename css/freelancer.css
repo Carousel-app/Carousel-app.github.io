@@ -285,6 +285,10 @@ header.masthead h2 {
   box-shadow: none !important;
 }
 
+.mv {
+  margin-right: 12px !important;
+}
+
 .floating-label-form-group label {
   font-size: 0.85em;
   line-height: 1.764705882em;
@@ -313,6 +317,10 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
+  color: #18BC9C;
+}
+
+.floating-label-form-group-login:focus {
   color: #18BC9C;
 }
 
