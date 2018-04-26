@@ -31,13 +31,17 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Carousel</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login">Login</a>
+            </li>
+
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
@@ -53,14 +57,50 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead mb-0 text-secondary text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase mb-0">Carousel</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">{Agregar pequeña descripcion con palabras de que somos}</h2>
+        <hr class="star-dark mb-5">
+        <h2 class="font-weight-light mb-0">[Descripcion de lo que somos]</h2>
       </div>
     </header>
+
+    <!-- login -->
+    <section class="bg-primary text-white mb-0" id="login">
+      <div class="container">
+        <h2 class="bg-primary text-white text-center">Login</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form name="sentMessage" id="loginForm" novalidate="novalidate">
+
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Password</label>
+                  <input class="form-control" id="name" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter your password">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="loginSuccess"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-secondary btn-xl" id="loginToPage">Login</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
@@ -253,7 +293,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Carousel 2018</small>
+        <small>Copyright &copy; Your Website 2018</small>
       </div>
     </div>
 
