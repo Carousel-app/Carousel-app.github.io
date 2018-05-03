@@ -102,7 +102,7 @@
 
    <?php
    if($result){
-     header ("Location: /php-get-started/GitHub/Carousel-app.github.io/#login");
+     header ("Location: /");
      echo "Contacto creado";
 
    } else {

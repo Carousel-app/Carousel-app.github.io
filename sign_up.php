@@ -52,7 +52,7 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#login">Login</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#login">Login</a>
         </li>
 
         <li class="nav-item mx-0 mx-lg-1">
@@ -60,13 +60,13 @@
         </li>
 
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#portfolio">Portfolio</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#about">About</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#about">About</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#contact">Contact</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#contact">Contact</a>
         </li>
       </ul>
     </div>
