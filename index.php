@@ -58,7 +58,7 @@
           </li>
 
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="sign_up.php">Sign up</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="sign_up.php#sign_up">Sign up</a>
           </li>
 
           <li class="nav-item mx-0 mx-lg-1">
@@ -96,10 +96,9 @@
 
             <div class="control-group">
               <div class="form-group floating-label-form-group-login controls mb-0 pb-2">
-                <label for="name">Name
+                <label>Name</label>
                 <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
-                </label>
               </div>
             </div>
 
