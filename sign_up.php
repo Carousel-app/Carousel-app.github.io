@@ -1,4 +1,13 @@
+<?php
+try {
 
+  require_once('bd_connection.php');
+
+} catch(Exception $ex) {
+  $error = $e->getMessage();
+  echo $error;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -196,7 +205,7 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/freelancer.min.js"></script>
-
+<?php $conn->close(); ?>
 </body>
 
 </html>

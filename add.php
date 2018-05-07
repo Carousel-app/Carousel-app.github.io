@@ -15,14 +15,17 @@
   try {
 
     require_once('bd_connection.php');
-    $sql = "INSERT INTO `users` (`id`, `username`, `password`, `email`, `points`) ";
-    $sql .= "VALUES (NULL, '{$nombre}', '{$password}', '$email', 0); ";
-    $result = $conn->query($sql);
+    // $sql = "INSERT INTO `users` (`id`, `username`, `password`, `email`, `points`) ";
+    // $sql .= "VALUES (NULL, '{$nombre}', '{$password}', '{$email}', 0);";
+    $sql = "INSERT INTO `users` (`id`, `username`, `password`, `email`, `points`) VALUES (NULL, 'Martin', '123456', 'micorreo@gmail.com', 0);";
+    $result = mysqli_query($conn, $sql);
 
   } catch(Exception $ex) {
     $error = $e->getMessage();
     echo $error;
   }
+
+  echo var_dump($_POST);
 
  ?>
 
@@ -66,21 +69,21 @@
        <ul class="navbar-nav ml-auto">
 
          <li class="nav-item mx-0 mx-lg-1">
-           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#login">Login</a>
+           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#login">Login</a>
          </li>
 
          <li class="nav-item mx-0 mx-lg-1">
-           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sign_up">Sign up</a>
+           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="sign_up.html#sign_up">Sign up</a>
          </li>
 
          <li class="nav-item mx-0 mx-lg-1">
-           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#portfolio">Portfolio</a>
+           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
          </li>
          <li class="nav-item mx-0 mx-lg-1">
-           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#about">About</a>
+           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#about">About</a>
          </li>
          <li class="nav-item mx-0 mx-lg-1">
-           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php#contact">Contact</a>
+           <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#contact">Contact</a>
          </li>
        </ul>
      </div>
@@ -104,13 +107,15 @@
    if($result){
      header ("Location: /");
      echo "Contacto creado";
-
+     echo var_dump($_POST);
    } else {
      echo "Error: " . $conn->error;
    }
    ?>
 
-   <?php $conn->close(); ?>
+   <?php $conn->close();
+      unset($conn);
+   ?>
  </body>
 
  <!-- Footer -->
